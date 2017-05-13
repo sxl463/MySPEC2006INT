@@ -1,0 +1,21 @@
+benchmark   sloc     functions
+
+lbm         1,156    19
+
+mcf         2,686    24
+
+libquantum  4,358    115
+
+bzip2       8,393    100
+
+sjeng       13,547   144
+
+milc        15,042   235
+
+spihnx3     25,090   369
+
+hmmer       35,992   538
+
+h264ref     51,578   590
+
+

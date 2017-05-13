@@ -1,0 +1,456 @@
+runspec v6674 started at Sat May 13 12:23:02 2017 on "cse-p344siis10"
+runspec is: /home/sxl463/working/cpu2006/bin/runspec
+runspec: runspec --config=clang.cfg --action=build 433.milc
+toolset: linux-suse10-amd64
+
+Locating benchmarks...found 31 benchmarks in 6 benchsets.
+Reading config file '/home/sxl463/working/cpu2006/config/clang.cfg'
+Running "specperl /home/sxl463/working/cpu2006/Docs/sysinfo" to gather system information.
+Read 62 total lines from the sysinfo program.
+Read 61 usable lines from the sysinfo program.
+
+Loading "http://www.spec.org/auto/cpu2006/current_version" for version check: OK
+Retrieving flags file (/home/sxl463/working/cpu2006/config/flags/Example-gcc4x-flags-revA.xml)...
+Retrieving flags file (/home/sxl463/working/cpu2006/config/flags/Example-linux-platform-revA.xml)...
+Verbosity = 5
+Action    = build
+Tune      = base
+Ext       = gcc43-64bit
+Size      = ref
+Machine   = default
+benchmarks= 433.milc
+outputs   = asc,csv,html
+username  = sxl463
+Benchmarks selected: 433.milc
+Compiling Binaries
+
+------------------------------------------------------------------------
+MD5 mismatch for options (stored: 68a3089cff8389e70e76a4d15aab04d8)
+  Building 433.milc base gcc43-64bit default: (build_base_gcc43-64bit.0000)
+Wrote to makefile '/home/sxl463/working/cpu2006/benchspec/CPU2006/433.milc/build/build_base_gcc43-64bit.0000/Makefile.deps':
+
+# These are the build dependencies
+
+# End dependencies
+Wrote to makefile '/home/sxl463/working/cpu2006/benchspec/CPU2006/433.milc/build/build_base_gcc43-64bit.0000/Makefile.spec':
+TUNE=base
+EXT=gcc43-64bit
+NUMBER=433
+NAME=milc
+SOURCES= control.c f_meas.c gauge_info.c setup.c update.c update_h.c \
+	 update_u.c layout_hyper.c check_unitarity.c d_plaq4.c gaugefix2.c \
+	 io_helpers.c io_lat4.c make_lattice.c path_product.c ploop3.c ranmom.c \
+	 ranstuff.c reunitarize2.c gauge_stuff.c grsource_imp.c mat_invert.c \
+	 quark_stuff.c rephase.c cmplx.c addmat.c addvec.c clear_mat.c clearvec.c \
+	 m_amatvec.c m_mat_an.c m_mat_na.c m_mat_nn.c m_matvec.c make_ahmat.c \
+	 rand_ahmat.c realtr.c s_m_a_mat.c s_m_a_vec.c s_m_s_mat.c s_m_vec.c \
+	 s_m_mat.c su3_adjoint.c su3_dot.c su3_rdot.c su3_proj.c su3mat_copy.c \
+	 submat.c subvec.c trace_su3.c uncmp_ahmat.c msq_su3vec.c sub4vecs.c \
+	 m_amv_4dir.c m_amv_4vec.c m_mv_s_4dir.c m_su2_mat_vec_n.c l_su2_hit_n.c \
+	 r_su2_hit_a.c m_su2_mat_vec_a.c gaussrand.c byterevn.c m_mat_hwvec.c \
+	 m_amat_hwvec.c dslash_fn2.c d_congrad5_fn.c com_vanilla.c io_nonansi.c
+EXEBASE=milc
+NEED_MATH=yes
+BENCHLANG=C
+ONESTEP=
+CONESTEP=
+
+BENCH_FLAGS      = -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS
+CC               = /usr/local/bin/clang
+COPTIMIZE        = -fno-strict-aliasing
+CXX              = /usr/local/bin/clang++
+CXXOPTIMIZE      = -fno-strict-aliasing
+FC               = /usr/bin/gfortran
+FOPTIMIZE        = -fno-strict-aliasing
+FPBASE           = yes
+OS               = unix
+PORTABILITY      = -DSPEC_CPU_LP64
+RANLIB           = llvm-ranlib
+absolutely_no_locking = 0
+action           = build
+allow_extension_override = 0
+backup_config    = 1
+baseexe          = milc
+basepeak         = 1
+benchdir         = benchspec
+benchmark        = 433.milc
+binary           = 
+bindir           = exe
+build_in_build_dir = 1
+builddir         = build
+bundleaction     = 
+bundlename       = 
+calctol          = 0
+changedmd5       = 0
+check_integrity  = 1
+check_md5        = 1
+check_version    = 1
+clean_between_builds = no
+command_add_redirect = 0
+commanderrfile   = speccmds.err
+commandexe       = milc_base.gcc43-64bit
+commandfile      = speccmds.cmd
+commandoutfile   = speccmds.out
+commandstdoutfile = speccmds.stdout
+compareerrfile   = compare.err
+comparefile      = compare.cmd
+compareoutfile   = compare.out
+comparestdoutfile = compare.stdout
+compile_error    = 0
+compwhite        = 
+configdir        = config
+configpath       = /home/sxl463/working/cpu2006/config/clang.cfg
+copies           = 1
+datadir          = data
+default_size     = ref
+delay            = 0
+deletebinaries   = 0
+deletework       = 0
+dependent_workloads = 0
+difflines        = 10
+dirprot          = 511
+endian           = 12345678
+env_vars         = 0
+exitvals         = spec_exit
+expand_notes     = 0
+expid            = 
+ext              = gcc43-64bit
+fake             = 0
+feedback         = 1
+flag_url_base    = http://www.spec.org/auto/cpu2006/flags/
+floatcompare     = 
+help             = 0
+http_proxy       = 
+http_timeout     = 30
+hw_avail         = Dec-9999
+hw_cpu_char      = 
+hw_cpu_mhz       = 9999
+hw_cpu_name      = Intel Core i5-4590
+hw_disk          = 184 GB  add more disk info here
+hw_fpu           = Integrated
+hw_memory001     = 15.593 GB fixme: If using DDR3, format is:
+hw_memory002     = 'N GB (M x N GB nRxn PCn-nnnnnR-n, ECC)'
+hw_model         = System Model Name
+hw_nchips        = 1
+hw_ncores        = number of cores enabled
+hw_ncoresperchip = number of cores manufactured into each chip
+hw_ncpuorder     = 1,2 chips
+hw_nthreadspercore = number of threads enabled per core
+hw_ocache        = None
+hw_other         = None
+hw_pcache        = 9999 KB I + 9999 KB D on chip per core
+hw_scache        = 9999 KB I+D on chip per core
+hw_tcache        = 9999 MB I+D on chip per chip
+hw_vendor        = System Vendor
+ignore_errors    = yes
+ignore_sigint    = 0
+ignorecase       = 
+info_wrap_columns = 50
+inputdir         = input
+iteration        = -1
+iterations       = 3
+keeptmp          = 0
+license_num      = 0
+line_width       = 0
+locking          = 1
+log              = CPU2006
+log_line_width   = 0
+log_timestamp    = 0
+logname          = /home/sxl463/working/cpu2006/result/CPU2006.026.log
+lognum           = 026
+mach             = default
+mail_reports     = all
+mailcompress     = 0
+mailmethod       = smtp
+mailport         = 25
+mailserver       = 127.0.0.1
+mailto           = 
+make             = specmake
+make_no_clobber  = 0
+makeflags        = 
+max_active_compares = 0
+mean_anyway      = 0
+min_report_runs  = 3
+minimize_builddirs = 0
+minimize_rundirs = 0
+name             = milc
+need_math        = yes
+no_input_handler = close
+no_monitor       = 
+note_preenv      = 0
+notes_os_000     = 'ulimit -s unlimited' was used to set environment stack size
+notes_plat_sysinfo_000 =  Sysinfo program /home/sxl463/working/cpu2006/Docs/sysinfo
+notes_plat_sysinfo_005 =  $Rev: 6775 $ $Date:: 2011-08-16 \#$ 8787f7622badcf24e01c368b1db4377c
+notes_plat_sysinfo_010 =  running on cse-p344siis10 Sat May 13 12:23:03 2017
+notes_plat_sysinfo_015 = 
+notes_plat_sysinfo_020 =  This section contains SUT (System Under Test) info as seen by
+notes_plat_sysinfo_025 =  some common utilities.  To remove or add to this section, see:
+notes_plat_sysinfo_030 =    http://www.spec.org/cpu2006/Docs/config.html\#sysinfo
+notes_plat_sysinfo_035 = 
+notes_plat_sysinfo_040 =  From /proc/cpuinfo
+notes_plat_sysinfo_045 =     model name : Intel(R) Core(TM) i5-4590 CPU @ 3.30GHz
+notes_plat_sysinfo_050 =        1 "physical id"s (chips)
+notes_plat_sysinfo_055 =        4 "processors"
+notes_plat_sysinfo_060 =     cores, siblings (Caution: counting these is hw and system dependent.  The
+notes_plat_sysinfo_065 =     following excerpts from /proc/cpuinfo might not be reliable.  Use with
+notes_plat_sysinfo_070 =     caution.)
+notes_plat_sysinfo_075 =        cpu cores : 4
+notes_plat_sysinfo_080 =        siblings  : 4
+notes_plat_sysinfo_085 =        physical 0: cores 0 1 2 3
+notes_plat_sysinfo_090 =     cache size : 6144 KB
+notes_plat_sysinfo_095 = 
+notes_plat_sysinfo_100 =  From /proc/meminfo
+notes_plat_sysinfo_105 =     MemTotal:       16350528 kB
+notes_plat_sysinfo_110 =     HugePages_Total:       0
+notes_plat_sysinfo_115 =     Hugepagesize:       2048 kB
+notes_plat_sysinfo_120 = 
+notes_plat_sysinfo_125 =  /usr/bin/lsb_release -d
+notes_plat_sysinfo_130 =     Ubuntu 14.04.5 LTS
+notes_plat_sysinfo_135 = 
+notes_plat_sysinfo_140 =  From /etc/*release* /etc/*version*
+notes_plat_sysinfo_145 =     debian_version: jessie/sid
+notes_plat_sysinfo_150 =     os-release:
+notes_plat_sysinfo_155 =        NAME="Ubuntu"
+notes_plat_sysinfo_160 =        VERSION="14.04.5 LTS, Trusty Tahr"
+notes_plat_sysinfo_165 =        ID=ubuntu
+notes_plat_sysinfo_170 =        ID_LIKE=debian
+notes_plat_sysinfo_175 =        PRETTY_NAME="Ubuntu 14.04.5 LTS"
+notes_plat_sysinfo_180 =        VERSION_ID="14.04"
+notes_plat_sysinfo_185 =        HOME_URL="http://www.ubuntu.com/"
+notes_plat_sysinfo_190 =        SUPPORT_URL="http://help.ubuntu.com/"
+notes_plat_sysinfo_195 = 
+notes_plat_sysinfo_200 =  uname -a:
+notes_plat_sysinfo_205 =     Linux cse-p344siis10 3.19.0-51-generic \#58~14.04.1-Ubuntu SMP Fri Feb 26
+notes_plat_sysinfo_210 =     22:02:58 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+notes_plat_sysinfo_215 = 
+notes_plat_sysinfo_220 =  run-level 2 May 1 18:34
+notes_plat_sysinfo_225 = 
+notes_plat_sysinfo_230 =  SPEC is set to: /home/sxl463/working/cpu2006
+notes_plat_sysinfo_235 =     Filesystem     Type  Size  Used Avail Use% Mounted on
+notes_plat_sysinfo_240 =     /dev/dm-0      ext4  184G   97G   78G  56% /
+notes_plat_sysinfo_245 = 
+notes_plat_sysinfo_250 =  (End of data from sysinfo program)
+notes_submit_000 = 'numactl' was used to bind copies to the cores.
+notes_submit_005 = See the configuration file for details.
+notes_wrap_columns = 0
+notes_wrap_indent =   
+num              = 433
+obiwan           = 
+os_exe_ext       = 
+output           = asc
+output_format    = asc,csv,html
+output_root      = 
+outputdir        = output
+parallel_setup   = 1
+parallel_setup_prefork = 
+parallel_setup_type = fork
+parallel_test    = 0
+parallel_test_submit = 0
+parallel_test_workloads = 
+path             = /home/sxl463/working/cpu2006/benchspec/CPU2006/433.milc
+plain_train      = 1
+power            = 0
+preenv           = 1
+prefix           = 
+prepared_by      = sxl463  (is never output, only tags rawfile)
+ranks            = 1
+rate             = 0
+realuser         = your name here
+rebuild          = 0
+reftime          = reftime
+reportable       = yes
+resultdir        = result
+review           = 0
+run              = all
+rundir           = run
+runspec          = /home/sxl463/working/cpu2006/bin/runspec --config=clang.cfg --action=build 433.milc
+safe_eval        = 1
+section_specifier_fatal = 1
+sendmail         = /usr/sbin/sendmail
+setpgrp_enabled  = 1
+setprocgroup     = 1
+setup_error      = 0
+shrate           = 0
+sigint           = 2
+size             = ref
+size_class       = ref
+skipabstol       = 
+skipobiwan       = 
+skipreltol       = 
+skiptol          = 
+smarttune        = base
+specdiff         = specdiff
+specmake         = Makefile.YYYtArGeTYYYspec
+specrun          = specinvoke
+speed            = 0
+srcalt           = 
+srcdir           = src
+srcsource        = /home/sxl463/working/cpu2006/benchspec/CPU2006/433.milc/src
+stagger          = 10
+strict_rundir_verify = 1
+submit_default   = $BIND $command
+sw_avail         = May-2010
+sw_base_ptrsize  = 64-bit
+sw_compiler      = gcc, g++ & gfortran 4.3.4
+sw_file          = ext4
+sw_os001         = Ubuntu 14.04.5 LTS
+sw_os002         = 3.19.0-51-generic
+sw_other         = None
+sw_peak_ptrsize  = 64-bit
+sw_state         = Run level 2 (add definition here)
+sysinfo_program  = specperl /home/sxl463/working/cpu2006/Docs/sysinfo
+table            = 1
+teeout           = yes
+teerunout        = yes
+test_date        = May-2017
+test_sponsor     = Test Sponsor (Optional, defaults to hw_vendor)
+tester           = (Optional, defaults to hw_vendor)
+top              = /home/sxl463/working/cpu2006
+train_with       = train
+tune             = base
+uid              = 1001
+unbuffer         = 1
+update-flags     = 0
+use_submit_for_speed = 0
+username         = sxl463
+vendor           = anon
+vendor_makefiles = 0
+verbose          = 5
+version          = 0
+version_url      = http://www.spec.org/auto/cpu2006/current_version
+worklist         = list
+OUTPUT_RMFILES   = su3imp.out
+  Compile for '433.milc' started at: Sat May 13 12:23:04 2017 (1494692584)
+Issuing make.clean command 'specmake clean'
+specmake clean 2> make.clean.err | tee make.clean.out
+Start make.clean command: Sat May 13 12:23:04 2017 (1494692584)
+rm -rf *.o  su3imp.out
+find . \( -name \*.o -o -name '*.fppized.f*' -o -name '*.i' -o -name '*.mod' \) -print | xargs rm -rf
+rm -rf milc
+rm -rf milc.exe
+rm -rf core
+rm -rf 
+Stop make.clean command: Sat May 13 12:23:04 2017 (1494692584)
+Elapsed time for make.clean command: 00:00:00 (0)
+Issuing make command 'specmake build'
+specmake build 2> make.err | tee make.out
+Start make command: Sat May 13 12:23:04 2017 (1494692584)
+/usr/local/bin/clang -c -o control.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       control.c
+/usr/local/bin/clang -c -o f_meas.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       f_meas.c
+/usr/local/bin/clang -c -o gauge_info.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       gauge_info.c
+/usr/local/bin/clang -c -o setup.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       setup.c
+/usr/local/bin/clang -c -o update.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       update.c
+/usr/local/bin/clang -c -o update_h.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       update_h.c
+/usr/local/bin/clang -c -o update_u.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       update_u.c
+/usr/local/bin/clang -c -o layout_hyper.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       layout_hyper.c
+/usr/local/bin/clang -c -o check_unitarity.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       check_unitarity.c
+/usr/local/bin/clang -c -o d_plaq4.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       d_plaq4.c
+/usr/local/bin/clang -c -o gaugefix2.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       gaugefix2.c
+/usr/local/bin/clang -c -o io_helpers.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       io_helpers.c
+/usr/local/bin/clang -c -o io_lat4.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       io_lat4.c
+io_lat4.c:1334:37: warning: cast to 'char *' from smaller integer type 'int32type' (aka 'int') [-Wint-to-pointer-cast]
+                     (char *)GAUGE_VERSION_NUMBER,(char *)tmp);
+                                                  ^
+1 warning generated.
+/usr/local/bin/clang -c -o make_lattice.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       make_lattice.c
+/usr/local/bin/clang -c -o path_product.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       path_product.c
+/usr/local/bin/clang -c -o ploop3.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       ploop3.c
+/usr/local/bin/clang -c -o ranmom.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       ranmom.c
+/usr/local/bin/clang -c -o ranstuff.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       ranstuff.c
+/usr/local/bin/clang -c -o reunitarize2.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       reunitarize2.c
+/usr/local/bin/clang -c -o gauge_stuff.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       gauge_stuff.c
+/usr/local/bin/clang -c -o grsource_imp.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       grsource_imp.c
+/usr/local/bin/clang -c -o mat_invert.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       mat_invert.c
+/usr/local/bin/clang -c -o quark_stuff.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       quark_stuff.c
+/usr/local/bin/clang -c -o rephase.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       rephase.c
+/usr/local/bin/clang -c -o cmplx.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       cmplx.c
+/usr/local/bin/clang -c -o addmat.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       addmat.c
+/usr/local/bin/clang -c -o addvec.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       addvec.c
+/usr/local/bin/clang -c -o clear_mat.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       clear_mat.c
+/usr/local/bin/clang -c -o clearvec.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       clearvec.c
+/usr/local/bin/clang -c -o m_amatvec.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       m_amatvec.c
+/usr/local/bin/clang -c -o m_mat_an.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       m_mat_an.c
+/usr/local/bin/clang -c -o m_mat_na.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       m_mat_na.c
+/usr/local/bin/clang -c -o m_mat_nn.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       m_mat_nn.c
+/usr/local/bin/clang -c -o m_matvec.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       m_matvec.c
+/usr/local/bin/clang -c -o make_ahmat.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       make_ahmat.c
+/usr/local/bin/clang -c -o rand_ahmat.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       rand_ahmat.c
+/usr/local/bin/clang -c -o realtr.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       realtr.c
+/usr/local/bin/clang -c -o s_m_a_mat.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       s_m_a_mat.c
+/usr/local/bin/clang -c -o s_m_a_vec.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       s_m_a_vec.c
+/usr/local/bin/clang -c -o s_m_s_mat.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       s_m_s_mat.c
+/usr/local/bin/clang -c -o s_m_vec.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       s_m_vec.c
+/usr/local/bin/clang -c -o s_m_mat.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       s_m_mat.c
+/usr/local/bin/clang -c -o su3_adjoint.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       su3_adjoint.c
+/usr/local/bin/clang -c -o su3_dot.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       su3_dot.c
+/usr/local/bin/clang -c -o su3_rdot.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       su3_rdot.c
+/usr/local/bin/clang -c -o su3_proj.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       su3_proj.c
+/usr/local/bin/clang -c -o su3mat_copy.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       su3mat_copy.c
+/usr/local/bin/clang -c -o submat.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       submat.c
+/usr/local/bin/clang -c -o subvec.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       subvec.c
+/usr/local/bin/clang -c -o trace_su3.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       trace_su3.c
+/usr/local/bin/clang -c -o uncmp_ahmat.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       uncmp_ahmat.c
+/usr/local/bin/clang -c -o msq_su3vec.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       msq_su3vec.c
+/usr/local/bin/clang -c -o sub4vecs.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       sub4vecs.c
+/usr/local/bin/clang -c -o m_amv_4dir.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       m_amv_4dir.c
+/usr/local/bin/clang -c -o m_amv_4vec.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       m_amv_4vec.c
+/usr/local/bin/clang -c -o m_mv_s_4dir.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       m_mv_s_4dir.c
+/usr/local/bin/clang -c -o m_su2_mat_vec_n.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       m_su2_mat_vec_n.c
+/usr/local/bin/clang -c -o l_su2_hit_n.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       l_su2_hit_n.c
+/usr/local/bin/clang -c -o r_su2_hit_a.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       r_su2_hit_a.c
+/usr/local/bin/clang -c -o m_su2_mat_vec_a.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       m_su2_mat_vec_a.c
+/usr/local/bin/clang -c -o gaussrand.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       gaussrand.c
+/usr/local/bin/clang -c -o byterevn.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       byterevn.c
+/usr/local/bin/clang -c -o m_mat_hwvec.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       m_mat_hwvec.c
+/usr/local/bin/clang -c -o m_amat_hwvec.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       m_amat_hwvec.c
+/usr/local/bin/clang -c -o dslash_fn2.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       dslash_fn2.c
+/usr/local/bin/clang -c -o d_congrad5_fn.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       d_congrad5_fn.c
+/usr/local/bin/clang -c -o com_vanilla.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       com_vanilla.c
+com_vanilla.c:843:13: warning: cast to 'char *' from smaller integer type 'int' [-Wint-to-pointer-cast]
+    return( F_PT( neighbor[direction][s-lattice], field ) );
+            ^
+./macros.h:45:29: note: expanded from macro 'F_PT'
+#define F_PT( site , fo )  ((char *)( site ) + (fo)) 
+                            ^
+1 warning generated.
+/usr/local/bin/clang -c -o io_nonansi.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       io_nonansi.c
+/usr/local/bin/clang   -fno-strict-aliasing  -DSPEC_CPU_LP64     -flto -fuse-ld=gold -Wl,-plugin-opt=also-emit-llvm   control.o f_meas.o gauge_info.o setup.o update.o update_h.o update_u.o layout_hyper.o check_unitarity.o d_plaq4.o gaugefix2.o io_helpers.o io_lat4.o make_lattice.o path_product.o ploop3.o ranmom.o ranstuff.o reunitarize2.o gauge_stuff.o grsource_imp.o mat_invert.o quark_stuff.o rephase.o cmplx.o addmat.o addvec.o clear_mat.o clearvec.o m_amatvec.o m_mat_an.o m_mat_na.o m_mat_nn.o m_matvec.o make_ahmat.o rand_ahmat.o realtr.o s_m_a_mat.o s_m_a_vec.o s_m_s_mat.o s_m_vec.o s_m_mat.o su3_adjoint.o su3_dot.o su3_rdot.o su3_proj.o su3mat_copy.o submat.o subvec.o trace_su3.o uncmp_ahmat.o msq_su3vec.o sub4vecs.o m_amv_4dir.o m_amv_4vec.o m_mv_s_4dir.o m_su2_mat_vec_n.o l_su2_hit_n.o r_su2_hit_a.o m_su2_mat_vec_a.o gaussrand.o byterevn.o m_mat_hwvec.o m_amat_hwvec.o dslash_fn2.o d_congrad5_fn.o com_vanilla.o io_nonansi.o             -lm        -o milc
+Stop make command: Sat May 13 12:23:06 2017 (1494692586)
+Elapsed time for make command: 00:00:02 (2)
+Issuing options command 'specmake options'
+specmake options 2> options.err | tee options.out
+Start options command: Sat May 13 12:23:06 2017 (1494692586)
+COMP: /usr/local/bin/clang -c -o options.o -DSPEC_CPU -DNDEBUG -I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS   -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       <source>
+C: CC="/usr/local/bin/clang"
+C: COBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC_CPU -DNDEBUG"
+P: BENCH_FLAGS="-I. -DFN -DFAST -DCONGRAD_TMP_VECTORS -DDSLASH_TMP_LINKS"
+P: BENCH_CFLAGS=""
+O: OPTIMIZE=""
+O: COPTIMIZE="-fno-strict-aliasing"
+P: PORTABILITY="-DSPEC_CPU_LP64"
+P: CPORTABILITY=""
+O: EXTRA_CFLAGS="-flto -std=gnu99"
+O: EXTRA_OPTIMIZE=""
+O: EXTRA_COPTIMIZE=""
+P: EXTRA_PORTABILITY=""
+P: EXTRA_CPORTABILITY=""
+LINK: /usr/local/bin/clang   -fno-strict-aliasing  -DSPEC_CPU_LP64     -flto -fuse-ld=gold -Wl,-plugin-opt=also-emit-llvm   <objects>   -lm        -o options
+C: LD="/usr/local/bin/clang"
+O: COPTIMIZE="-fno-strict-aliasing"
+P: PORTABILITY="-DSPEC_CPU_LP64"
+O: EXTRA_LDFLAGS="-flto -fuse-ld=gold -Wl,-plugin-opt=also-emit-llvm"
+C: MATH_LIBS="-lm"
+C: LDOUT="-o options"
+Stop options command: Sat May 13 12:23:06 2017 (1494692586)
+Elapsed time for options command: 00:00:00 (0)
+  Compile for '433.milc' ended at: Sat May 13 12:23:06 2017 (1494692586)
+  Elapsed compile for '433.milc': 00:00:02 (2)
+
+Build successes: 433.milc(base)
+
+Build Complete
+
+The log for this run is in /home/sxl463/working/cpu2006/result/CPU2006.026.log
+
+runspec finished at Sat May 13 12:23:07 2017; 5 total seconds elapsed

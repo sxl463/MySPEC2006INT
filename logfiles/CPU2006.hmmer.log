@@ -1,0 +1,444 @@
+runspec v6674 started at Sat May 13 12:23:08 2017 on "cse-p344siis10"
+runspec is: /home/sxl463/working/cpu2006/bin/runspec
+runspec: runspec --config=clang.cfg --action=build 456.hmmer
+toolset: linux-suse10-amd64
+
+Locating benchmarks...found 31 benchmarks in 6 benchsets.
+Reading config file '/home/sxl463/working/cpu2006/config/clang.cfg'
+Running "specperl /home/sxl463/working/cpu2006/Docs/sysinfo" to gather system information.
+Read 62 total lines from the sysinfo program.
+Read 61 usable lines from the sysinfo program.
+
+Loading "http://www.spec.org/auto/cpu2006/current_version" for version check: OK
+Retrieving flags file (/home/sxl463/working/cpu2006/config/flags/Example-gcc4x-flags-revA.xml)...
+Retrieving flags file (/home/sxl463/working/cpu2006/config/flags/Example-linux-platform-revA.xml)...
+Verbosity = 5
+Action    = build
+Tune      = base
+Ext       = gcc43-64bit
+Size      = ref
+Machine   = default
+benchmarks= 456.hmmer
+outputs   = asc,csv,html
+username  = sxl463
+Benchmarks selected: 456.hmmer
+Compiling Binaries
+
+------------------------------------------------------------------------
+MD5 mismatch for options (stored: 95f1c7c8ad7540ed403b2453b1e5314e)
+  Building 456.hmmer base gcc43-64bit default: (build_base_gcc43-64bit.0000)
+Wrote to makefile '/home/sxl463/working/cpu2006/benchspec/CPU2006/456.hmmer/build/build_base_gcc43-64bit.0000/Makefile.deps':
+
+# These are the build dependencies
+
+# End dependencies
+Wrote to makefile '/home/sxl463/working/cpu2006/benchspec/CPU2006/456.hmmer/build/build_base_gcc43-64bit.0000/Makefile.spec':
+TUNE=base
+EXT=gcc43-64bit
+NUMBER=456
+NAME=hmmer
+SOURCES= alphabet.c core_algorithms.c debug.c display.c emit.c emulation.c \
+	 fast_algorithms.c histogram.c hmmio.c hmmcalibrate.c hmmsearch.c \
+	 mathsupport.c masks.c misc.c modelmakers.c plan7.c plan9.c postprob.c \
+	 prior.c tophits.c trace.c ucbqsort.c a2m.c aligneval.c alignio.c \
+	 clustal.c cluster.c dayhoff.c eps.c file.c getopt.c gki.c gsi.c \
+	 hsregex.c iupac.c msa.c msf.c phylip.c revcomp.c rk.c selex.c \
+	 seqencode.c shuffle.c sqerror.c sqio.c squidcore.c sre_ctype.c \
+	 sre_math.c sre_random.c sre_string.c ssi.c stack.c stockholm.c \
+	 translate.c types.c vectorops.c weight.c
+EXEBASE=hmmer
+NEED_MATH=yes
+BENCHLANG=C
+ONESTEP=
+CONESTEP=
+
+CC               = /usr/local/bin/clang
+COPTIMIZE        = -fno-strict-aliasing
+CXX              = /usr/local/bin/clang++
+CXXOPTIMIZE      = -fno-strict-aliasing
+FC               = /usr/bin/gfortran
+FOPTIMIZE        = -fno-strict-aliasing
+FPBASE           = yes
+OS               = unix
+PORTABILITY      = -DSPEC_CPU_LP64
+RANLIB           = llvm-ranlib
+absolutely_no_locking = 0
+abstol           = 1e-05
+action           = build
+allow_extension_override = 0
+backup_config    = 1
+baseexe          = hmmer
+basepeak         = 1
+benchdir         = benchspec
+benchmark        = 456.hmmer
+binary           = 
+bindir           = exe
+build_in_build_dir = 1
+builddir         = build
+bundleaction     = 
+bundlename       = 
+calctol          = 0
+changedmd5       = 0
+check_integrity  = 1
+check_md5        = 1
+check_version    = 1
+clean_between_builds = no
+command_add_redirect = 0
+commanderrfile   = speccmds.err
+commandexe       = hmmer_base.gcc43-64bit
+commandfile      = speccmds.cmd
+commandoutfile   = speccmds.out
+commandstdoutfile = speccmds.stdout
+compareerrfile   = compare.err
+comparefile      = compare.cmd
+compareoutfile   = compare.out
+comparestdoutfile = compare.stdout
+compile_error    = 0
+compwhite        = 
+configdir        = config
+configpath       = /home/sxl463/working/cpu2006/config/clang.cfg
+copies           = 1
+datadir          = data
+default_size     = ref
+delay            = 0
+deletebinaries   = 0
+deletework       = 0
+dependent_workloads = 0
+difflines        = 10
+dirprot          = 511
+endian           = 12345678
+env_vars         = 0
+exitvals         = spec_exit
+expand_notes     = 0
+expid            = 
+ext              = gcc43-64bit
+fake             = 0
+feedback         = 1
+flag_url_base    = http://www.spec.org/auto/cpu2006/flags/
+floatcompare     = 
+help             = 0
+http_proxy       = 
+http_timeout     = 30
+hw_avail         = Dec-9999
+hw_cpu_char      = 
+hw_cpu_mhz       = 9999
+hw_cpu_name      = Intel Core i5-4590
+hw_disk          = 184 GB  add more disk info here
+hw_fpu           = Integrated
+hw_memory001     = 15.593 GB fixme: If using DDR3, format is:
+hw_memory002     = 'N GB (M x N GB nRxn PCn-nnnnnR-n, ECC)'
+hw_model         = System Model Name
+hw_nchips        = 1
+hw_ncores        = number of cores enabled
+hw_ncoresperchip = number of cores manufactured into each chip
+hw_ncpuorder     = 1,2 chips
+hw_nthreadspercore = number of threads enabled per core
+hw_ocache        = None
+hw_other         = None
+hw_pcache        = 9999 KB I + 9999 KB D on chip per core
+hw_scache        = 9999 KB I+D on chip per core
+hw_tcache        = 9999 MB I+D on chip per chip
+hw_vendor        = System Vendor
+ignore_errors    = yes
+ignore_sigint    = 0
+ignorecase       = 
+info_wrap_columns = 50
+inputdir         = input
+iteration        = -1
+iterations       = 3
+keeptmp          = 0
+license_num      = 0
+line_width       = 0
+locking          = 1
+log              = CPU2006
+log_line_width   = 0
+log_timestamp    = 0
+logname          = /home/sxl463/working/cpu2006/result/CPU2006.028.log
+lognum           = 028
+mach             = default
+mail_reports     = all
+mailcompress     = 0
+mailmethod       = smtp
+mailport         = 25
+mailserver       = 127.0.0.1
+mailto           = 
+make             = specmake
+make_no_clobber  = 0
+makeflags        = 
+max_active_compares = 0
+mean_anyway      = 0
+min_report_runs  = 3
+minimize_builddirs = 0
+minimize_rundirs = 0
+name             = hmmer
+need_math        = yes
+no_input_handler = close
+no_monitor       = 
+note_preenv      = 0
+notes_os_000     = 'ulimit -s unlimited' was used to set environment stack size
+notes_plat_sysinfo_000 =  Sysinfo program /home/sxl463/working/cpu2006/Docs/sysinfo
+notes_plat_sysinfo_005 =  $Rev: 6775 $ $Date:: 2011-08-16 \#$ 8787f7622badcf24e01c368b1db4377c
+notes_plat_sysinfo_010 =  running on cse-p344siis10 Sat May 13 12:23:09 2017
+notes_plat_sysinfo_015 = 
+notes_plat_sysinfo_020 =  This section contains SUT (System Under Test) info as seen by
+notes_plat_sysinfo_025 =  some common utilities.  To remove or add to this section, see:
+notes_plat_sysinfo_030 =    http://www.spec.org/cpu2006/Docs/config.html\#sysinfo
+notes_plat_sysinfo_035 = 
+notes_plat_sysinfo_040 =  From /proc/cpuinfo
+notes_plat_sysinfo_045 =     model name : Intel(R) Core(TM) i5-4590 CPU @ 3.30GHz
+notes_plat_sysinfo_050 =        1 "physical id"s (chips)
+notes_plat_sysinfo_055 =        4 "processors"
+notes_plat_sysinfo_060 =     cores, siblings (Caution: counting these is hw and system dependent.  The
+notes_plat_sysinfo_065 =     following excerpts from /proc/cpuinfo might not be reliable.  Use with
+notes_plat_sysinfo_070 =     caution.)
+notes_plat_sysinfo_075 =        cpu cores : 4
+notes_plat_sysinfo_080 =        siblings  : 4
+notes_plat_sysinfo_085 =        physical 0: cores 0 1 2 3
+notes_plat_sysinfo_090 =     cache size : 6144 KB
+notes_plat_sysinfo_095 = 
+notes_plat_sysinfo_100 =  From /proc/meminfo
+notes_plat_sysinfo_105 =     MemTotal:       16350528 kB
+notes_plat_sysinfo_110 =     HugePages_Total:       0
+notes_plat_sysinfo_115 =     Hugepagesize:       2048 kB
+notes_plat_sysinfo_120 = 
+notes_plat_sysinfo_125 =  /usr/bin/lsb_release -d
+notes_plat_sysinfo_130 =     Ubuntu 14.04.5 LTS
+notes_plat_sysinfo_135 = 
+notes_plat_sysinfo_140 =  From /etc/*release* /etc/*version*
+notes_plat_sysinfo_145 =     debian_version: jessie/sid
+notes_plat_sysinfo_150 =     os-release:
+notes_plat_sysinfo_155 =        NAME="Ubuntu"
+notes_plat_sysinfo_160 =        VERSION="14.04.5 LTS, Trusty Tahr"
+notes_plat_sysinfo_165 =        ID=ubuntu
+notes_plat_sysinfo_170 =        ID_LIKE=debian
+notes_plat_sysinfo_175 =        PRETTY_NAME="Ubuntu 14.04.5 LTS"
+notes_plat_sysinfo_180 =        VERSION_ID="14.04"
+notes_plat_sysinfo_185 =        HOME_URL="http://www.ubuntu.com/"
+notes_plat_sysinfo_190 =        SUPPORT_URL="http://help.ubuntu.com/"
+notes_plat_sysinfo_195 = 
+notes_plat_sysinfo_200 =  uname -a:
+notes_plat_sysinfo_205 =     Linux cse-p344siis10 3.19.0-51-generic \#58~14.04.1-Ubuntu SMP Fri Feb 26
+notes_plat_sysinfo_210 =     22:02:58 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+notes_plat_sysinfo_215 = 
+notes_plat_sysinfo_220 =  run-level 2 May 1 18:34
+notes_plat_sysinfo_225 = 
+notes_plat_sysinfo_230 =  SPEC is set to: /home/sxl463/working/cpu2006
+notes_plat_sysinfo_235 =     Filesystem     Type  Size  Used Avail Use% Mounted on
+notes_plat_sysinfo_240 =     /dev/dm-0      ext4  184G   97G   78G  56% /
+notes_plat_sysinfo_245 = 
+notes_plat_sysinfo_250 =  (End of data from sysinfo program)
+notes_submit_000 = 'numactl' was used to bind copies to the cores.
+notes_submit_005 = See the configuration file for details.
+notes_wrap_columns = 0
+notes_wrap_indent =   
+num              = 456
+obiwan           = 
+os_exe_ext       = 
+output           = asc
+output_format    = asc,csv,html
+output_root      = 
+outputdir        = output
+parallel_setup   = 1
+parallel_setup_prefork = 
+parallel_setup_type = fork
+parallel_test    = 0
+parallel_test_submit = 0
+parallel_test_workloads = 
+path             = /home/sxl463/working/cpu2006/benchspec/CPU2006/456.hmmer
+plain_train      = 1
+power            = 0
+preenv           = 1
+prefix           = 
+prepared_by      = sxl463  (is never output, only tags rawfile)
+ranks            = 1
+rate             = 0
+realuser         = your name here
+rebuild          = 0
+reftime          = reftime
+reltol           = 0.002
+reportable       = yes
+resultdir        = result
+review           = 0
+run              = all
+rundir           = run
+runspec          = /home/sxl463/working/cpu2006/bin/runspec --config=clang.cfg --action=build 456.hmmer
+safe_eval        = 1
+section_specifier_fatal = 1
+sendmail         = /usr/sbin/sendmail
+setpgrp_enabled  = 1
+setprocgroup     = 1
+setup_error      = 0
+shrate           = 0
+sigint           = 2
+size             = ref
+size_class       = ref
+skipabstol       = 
+skipobiwan       = 
+skipreltol       = 
+skiptol          = 
+smarttune        = base
+specdiff         = specdiff
+specmake         = Makefile.YYYtArGeTYYYspec
+specrun          = specinvoke
+speed            = 0
+srcalt           = 
+srcdir           = src
+srcsource        = /home/sxl463/working/cpu2006/benchspec/CPU2006/456.hmmer/src
+stagger          = 10
+strict_rundir_verify = 1
+submit_default   = $BIND $command
+sw_avail         = May-2010
+sw_base_ptrsize  = 64-bit
+sw_compiler      = gcc, g++ & gfortran 4.3.4
+sw_file          = ext4
+sw_os001         = Ubuntu 14.04.5 LTS
+sw_os002         = 3.19.0-51-generic
+sw_other         = None
+sw_peak_ptrsize  = 64-bit
+sw_state         = Run level 2 (add definition here)
+sysinfo_program  = specperl /home/sxl463/working/cpu2006/Docs/sysinfo
+table            = 1
+teeout           = yes
+teerunout        = yes
+test_date        = May-2017
+test_sponsor     = Test Sponsor (Optional, defaults to hw_vendor)
+tester           = (Optional, defaults to hw_vendor)
+top              = /home/sxl463/working/cpu2006
+train_with       = train
+tune             = base
+uid              = 1001
+unbuffer         = 1
+update-flags     = 0
+use_submit_for_speed = 0
+username         = sxl463
+vendor           = anon
+vendor_makefiles = 0
+verbose          = 5
+version          = 0
+version_url      = http://www.spec.org/auto/cpu2006/current_version
+worklist         = list
+OUTPUT_RMFILES   = leng100.out
+  Compile for '456.hmmer' started at: Sat May 13 12:23:10 2017 (1494692590)
+Issuing make.clean command 'specmake clean'
+specmake clean 2> make.clean.err | tee make.clean.out
+Start make.clean command: Sat May 13 12:23:10 2017 (1494692590)
+rm -rf *.o  leng100.out
+find . \( -name \*.o -o -name '*.fppized.f*' -o -name '*.i' -o -name '*.mod' \) -print | xargs rm -rf
+rm -rf hmmer
+rm -rf hmmer.exe
+rm -rf core
+rm -rf 
+Stop make.clean command: Sat May 13 12:23:10 2017 (1494692590)
+Elapsed time for make.clean command: 00:00:00 (0)
+Issuing make command 'specmake build'
+specmake build 2> make.err | tee make.out
+Start make command: Sat May 13 12:23:10 2017 (1494692590)
+/usr/local/bin/clang -c -o alphabet.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       alphabet.c
+/usr/local/bin/clang -c -o core_algorithms.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       core_algorithms.c
+/usr/local/bin/clang -c -o debug.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       debug.c
+/usr/local/bin/clang -c -o display.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       display.c
+/usr/local/bin/clang -c -o emit.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       emit.c
+/usr/local/bin/clang -c -o emulation.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       emulation.c
+/usr/local/bin/clang -c -o fast_algorithms.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       fast_algorithms.c
+/usr/local/bin/clang -c -o histogram.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       histogram.c
+/usr/local/bin/clang -c -o hmmio.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       hmmio.c
+/usr/local/bin/clang -c -o hmmcalibrate.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       hmmcalibrate.c
+/usr/local/bin/clang -c -o hmmsearch.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       hmmsearch.c
+/usr/local/bin/clang -c -o mathsupport.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       mathsupport.c
+/usr/local/bin/clang -c -o masks.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       masks.c
+/usr/local/bin/clang -c -o misc.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       misc.c
+/usr/local/bin/clang -c -o modelmakers.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       modelmakers.c
+/usr/local/bin/clang -c -o plan7.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       plan7.c
+/usr/local/bin/clang -c -o plan9.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       plan9.c
+/usr/local/bin/clang -c -o postprob.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       postprob.c
+/usr/local/bin/clang -c -o prior.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       prior.c
+/usr/local/bin/clang -c -o tophits.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       tophits.c
+tophits.c:307:5: warning: implicit declaration of function 'specqsort' is invalid in C99 [-Wimplicit-function-declaration]
+    specqsort(h->hit, h->num, sizeof(struct hit_s *), hit_comparison);
+    ^
+1 warning generated.
+/usr/local/bin/clang -c -o trace.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       trace.c
+/usr/local/bin/clang -c -o ucbqsort.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       ucbqsort.c
+/usr/local/bin/clang -c -o a2m.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       a2m.c
+/usr/local/bin/clang -c -o aligneval.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       aligneval.c
+/usr/local/bin/clang -c -o alignio.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       alignio.c
+/usr/local/bin/clang -c -o clustal.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       clustal.c
+/usr/local/bin/clang -c -o cluster.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       cluster.c
+/usr/local/bin/clang -c -o dayhoff.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       dayhoff.c
+/usr/local/bin/clang -c -o eps.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       eps.c
+/usr/local/bin/clang -c -o file.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       file.c
+/usr/local/bin/clang -c -o getopt.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       getopt.c
+/usr/local/bin/clang -c -o gki.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       gki.c
+/usr/local/bin/clang -c -o gsi.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       gsi.c
+gsi.c:261:3: warning: implicit declaration of function 'specqsort' is invalid in C99 [-Wimplicit-function-declaration]
+  specqsort((void *) g->elems, g->nkeys, sizeof(struct gsikey_s), gsi_keysorter); 
+  ^
+1 warning generated.
+/usr/local/bin/clang -c -o hsregex.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       hsregex.c
+/usr/local/bin/clang -c -o iupac.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       iupac.c
+/usr/local/bin/clang -c -o msa.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       msa.c
+/usr/local/bin/clang -c -o msf.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       msf.c
+/usr/local/bin/clang -c -o phylip.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       phylip.c
+/usr/local/bin/clang -c -o revcomp.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       revcomp.c
+/usr/local/bin/clang -c -o rk.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       rk.c
+/usr/local/bin/clang -c -o selex.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       selex.c
+/usr/local/bin/clang -c -o seqencode.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       seqencode.c
+/usr/local/bin/clang -c -o shuffle.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       shuffle.c
+/usr/local/bin/clang -c -o sqerror.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       sqerror.c
+/usr/local/bin/clang -c -o sqio.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       sqio.c
+/usr/local/bin/clang -c -o squidcore.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       squidcore.c
+/usr/local/bin/clang -c -o sre_ctype.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       sre_ctype.c
+/usr/local/bin/clang -c -o sre_math.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       sre_math.c
+/usr/local/bin/clang -c -o sre_random.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       sre_random.c
+/usr/local/bin/clang -c -o sre_string.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       sre_string.c
+/usr/local/bin/clang -c -o ssi.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       ssi.c
+ssi.c:950:5: warning: implicit declaration of function 'specqsort' is invalid in C99 [-Wimplicit-function-declaration]
+    specqsort((void *) g->pkeys, g->nprimary,   sizeof(struct ssipkey_s), pkeysort); 
+    ^
+1 warning generated.
+/usr/local/bin/clang -c -o stack.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       stack.c
+/usr/local/bin/clang -c -o stockholm.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       stockholm.c
+/usr/local/bin/clang -c -o translate.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       translate.c
+/usr/local/bin/clang -c -o types.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       types.c
+/usr/local/bin/clang -c -o vectorops.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       vectorops.c
+/usr/local/bin/clang -c -o weight.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       weight.c
+/usr/local/bin/clang   -fno-strict-aliasing  -DSPEC_CPU_LP64     -flto -fuse-ld=gold -Wl,-plugin-opt=also-emit-llvm   alphabet.o core_algorithms.o debug.o display.o emit.o emulation.o fast_algorithms.o histogram.o hmmio.o hmmcalibrate.o hmmsearch.o mathsupport.o masks.o misc.o modelmakers.o plan7.o plan9.o postprob.o prior.o tophits.o trace.o ucbqsort.o a2m.o aligneval.o alignio.o clustal.o cluster.o dayhoff.o eps.o file.o getopt.o gki.o gsi.o hsregex.o iupac.o msa.o msf.o phylip.o revcomp.o rk.o selex.o seqencode.o shuffle.o sqerror.o sqio.o squidcore.o sre_ctype.o sre_math.o sre_random.o sre_string.o ssi.o stack.o stockholm.o translate.o types.o vectorops.o weight.o             -lm        -o hmmer
+Stop make command: Sat May 13 12:23:13 2017 (1494692593)
+Elapsed time for make command: 00:00:03 (3)
+Issuing options command 'specmake options'
+specmake options 2> options.err | tee options.out
+Start options command: Sat May 13 12:23:13 2017 (1494692593)
+COMP: /usr/local/bin/clang -c -o options.o -DSPEC_CPU -DNDEBUG    -fno-strict-aliasing       -DSPEC_CPU_LP64  -flto -std=gnu99       <source>
+C: CC="/usr/local/bin/clang"
+C: COBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC_CPU -DNDEBUG"
+P: BENCH_FLAGS=""
+P: BENCH_CFLAGS=""
+O: OPTIMIZE=""
+O: COPTIMIZE="-fno-strict-aliasing"
+P: PORTABILITY="-DSPEC_CPU_LP64"
+P: CPORTABILITY=""
+O: EXTRA_CFLAGS="-flto -std=gnu99"
+O: EXTRA_OPTIMIZE=""
+O: EXTRA_COPTIMIZE=""
+P: EXTRA_PORTABILITY=""
+P: EXTRA_CPORTABILITY=""
+LINK: /usr/local/bin/clang   -fno-strict-aliasing  -DSPEC_CPU_LP64     -flto -fuse-ld=gold -Wl,-plugin-opt=also-emit-llvm   <objects>   -lm        -o options
+C: LD="/usr/local/bin/clang"
+O: COPTIMIZE="-fno-strict-aliasing"
+P: PORTABILITY="-DSPEC_CPU_LP64"
+O: EXTRA_LDFLAGS="-flto -fuse-ld=gold -Wl,-plugin-opt=also-emit-llvm"
+C: MATH_LIBS="-lm"
+C: LDOUT="-o options"
+Stop options command: Sat May 13 12:23:14 2017 (1494692594)
+Elapsed time for options command: 00:00:01 (1)
+  Compile for '456.hmmer' ended at: Sat May 13 12:23:14 2017 (1494692594)
+  Elapsed compile for '456.hmmer': 00:00:04 (4)
+
+Build successes: 456.hmmer(base)
+
+Build Complete
+
+The log for this run is in /home/sxl463/working/cpu2006/result/CPU2006.028.log
+
+runspec finished at Sat May 13 12:23:14 2017; 6 total seconds elapsed

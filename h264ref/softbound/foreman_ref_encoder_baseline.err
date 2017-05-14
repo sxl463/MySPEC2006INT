@@ -1,0 +1,13 @@
+
+Softboundcets: Memory safety violation detected
+
+Backtrace:
+./h264ref-softbound[0x55b745]
+./h264ref-softbound[0x55d615]
+./h264ref-softbound[0x422b07]
+./h264ref-softbound[0x45d066]
+./h264ref-softbound[0x55b90b]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf5)[0x7f6b9c89bf45]
+./h264ref-softbound[0x4043d9]
+
+ violation found but keep running...

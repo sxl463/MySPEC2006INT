@@ -1,0 +1,5 @@
+sxl463@cse-p344siis10:sjeng$ ls
+ref.txt  result  sjeng  sjeng.bc  sjeng.ref.err  sjeng.ref.out  softbound  time.sh
+sxl463@cse-p344siis10:sjeng$ sudo ./time.sh 
+It took 739 seconds
+

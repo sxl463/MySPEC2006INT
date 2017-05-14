@@ -1,0 +1,5 @@
+sxl463@cse-p344siis10:hmmer$ ls
+hmmer  hmmer.bc  hmmer.ref.nph3.err  hmmer.ref.nph3.out  nph3.hmm  retro.hmm  softbound  swiss41  time.sh
+sxl463@cse-p344siis10:hmmer$ sudo ./time.sh 
+[sudo] password for sxl463: 
+It took 360 seconds

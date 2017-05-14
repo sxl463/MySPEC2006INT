@@ -1,0 +1,25 @@
+INFO: subvq.c(103): Precomputing Mahalanobis distance invariants
+INFO: tmat.c(135): Reading HMM transition probability matrices: model/hmm/hub4/transition_matrices
+INFO: tmat.c(217): Read 48 transition matrices of size 3x4
+INFO: dict2pid.c(254): Building PID tables for dictionary
+INFO: dict2pid.c(422): 873 composite states; 324 composite sseq
+INFO: kbcore.c(225): Verifying models consistency:
+INFO: kb.c(197): Building lextrees
+INFO: kb.c(243): Creating Unigram Table
+INFO: kb.c(246): Size of word table after unigram + words in class: 99
+INFO: kb.c(263): Lextrees(3), 1428 nodes(ug)
+INFO: kb.c(291): Lextrees(3), 1 nodes(filler)
+INFO: kb.c(317): Beam= -460509, PBeam= -383758, WBeam= -268630, SVQBeam= -15350
+INFO: kb.c(322): Down Sampling Ratio = 1
+INFO: kb.c(328): Conditional Down Sampling Parameter = 0
+INFO: kb.c(333): GS map would be used for Gaussian Selection? = 1
+INFO: kb.c(336): SVQ would be used as Gaussian Score ?= 0
+INFO: kb.c(339): CI phone beam to prune the number of parent CI phones in CI-base GMM Selection = 939524096
+INFO: kb.c(341): Virtually no CI phone beam is applied now. (ci_pbeam>1000000)
+INFO: kb.c(345): Word-end pruning beam: 939524096
+INFO: kb.c(348): Phoneme look-ahead window size = 1
+INFO: kb.c(353): Phoneme look-ahead beam = -939524096
+INFO: vithist.c(77): Initializing Viterbi-history module
+FATAL_ERROR: "spec_main_live_pretend.c", line 140: Filesize claimed to be 0 for 
+It took 80 seconds
+

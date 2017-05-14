@@ -1,0 +1,35 @@
+[sudo] password for sxl463: 
+spec_init
+Loading Input Data
+Duplicating 9379 bytes
+Duplicating 18758 bytes
+Duplicating 37516 bytes
+Duplicating 75032 bytes
+Duplicating 150064 bytes
+Duplicating 300128 bytes
+Duplicating 600256 bytes
+Duplicating 1200512 bytes
+Duplicating 2401024 bytes
+Duplicating 4802048 bytes
+Duplicating 9604096 bytes
+Duplicating 19208192 bytes
+Duplicating 28692480 bytes
+Input data 67108864 bytes in length
+Compressing Input Data, level 5
+Compressed data 1150364 bytes in length
+Uncompressing Data
+Uncompressed data 67108864 bytes in length
+Uncompressed data compared correctly
+Compressing Input Data, level 7
+Compressed data 897249 bytes in length
+Uncompressing Data
+Uncompressed data 67108864 bytes in length
+Uncompressed data compared correctly
+Compressing Input Data, level 9
+Compressed data 665073 bytes in length
+Uncompressing Data
+Uncompressed data 67108864 bytes in length
+Uncompressed data compared correctly
+Tested 64MB buffer: OK!
+It took 279 seconds
+

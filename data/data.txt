@@ -1,14 +1,10 @@
-benchmark   sloc     functions
+benchmark   sloc     functions      Partitioning 1                 Partitioning 2             Partitioning 3
 
-lbm         1,156    19
+lbm         1,156    19             3/16    695/73    57.5%        5/14   695/114  71.6%      6/14   695/122   65%
 
-mcf         2,686    24
+libquantum  4,358    115            19/96  1690/179   43.1%        30/85  1690/476 187.3%     27/88  1690/553  224%  
 
-libquantum  4,358    115
-
-bzip2       8,393    100
-
-sjeng       13,547   144
+sjeng       13,547   144            15/129 3415/276   21.6%        32/102 3415/781 90.4%      48/96  3415/477  117%  
 
 milc        15,042   235
 
@@ -18,4 +14,8 @@ hmmer       35,992   538
 
 h264ref     51,578   590
 
+
+bzip2       8,393    100            
+
+mcf         2,686    24             2/22                     7/17                       10/14
 

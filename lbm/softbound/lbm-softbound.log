@@ -1,0 +1,112 @@
+sxl463@cse-p344siis10:softbound$ sudo ./time.sh 
+[sudo] password for sxl463: 
+MAIN_printInfo:
+	grid size      : 100 x 100 x 130 = 1.30 * 10^6 Cells
+	nTimeSteps     : 1000
+	result file    : reference.dat
+	action         : ndled, requesting memory from system
+	simulation type: [strcpy] overflow in strcpy with src
+	obstacle file  : <none>
+
+LBM_showGridStatistics:
+	nObstacleCells:   70688 nAccelCells:   18432 nFluidCells: 1210880
+	minRho:   1.0000 maxRho:   1.0000 mass: 1.300000e+06
+	minU: 0.000000e+00 maxU: 0.000000e+00
+
+timestep: 64
+LBM_showGridStatistics:
+	nObstacleCells:   70688 nAccelCells:   18432 nFluidCells: 1210880
+	minRho:   0.9481 maxRho:   1.0521 mass: 1.300000e+06
+	minU: 7.666312e-09 maxU: 2.096872e-02
+
+timestep: 128
+LBM_showGridStatistics:
+	nObstacleCells:   70688 nAccelCells:   18432 nFluidCells: 1210880
+	minRho:   0.9284 maxRho:   1.0731 mass: 1.300000e+06
+	minU: 2.693284e-06 maxU: 2.875310e-02
+
+timestep: 192
+LBM_showGridStatistics:
+	nObstacleCells:   70688 nAccelCells:   18432 nFluidCells: 1210880
+	minRho:   0.9218 maxRho:   1.0808 mass: 1.300000e+06
+	minU: 1.927732e-06 maxU: 3.174171e-02
+
+timestep: 256
+LBM_showGridStatistics:
+	nObstacleCells:   70688 nAccelCells:   18432 nFluidCells: 1210880
+	minRho:   0.9188 maxRho:   1.0843 mass: 1.300000e+06
+	minU: 1.734677e-06 maxU: 3.251626e-02
+
+timestep: 320
+LBM_showGridStatistics:
+	nObstacleCells:   70688 nAccelCells:   18432 nFluidCells: 1210880
+	minRho:   0.9182 maxRho:   1.0851 mass: 1.300000e+06
+	minU: 7.550871e-07 maxU: 3.283549e-02
+
+timestep: 384
+LBM_showGridStatistics:
+	nObstacleCells:   70688 nAccelCells:   18432 nFluidCells: 1210880
+	minRho:   0.9177 maxRho:   1.0857 mass: 1.300000e+06
+	minU: 1.827483e-06 maxU: 3.294014e-02
+
+timestep: 448
+LBM_showGridStatistics:
+	nObstacleCells:   70688 nAccelCells:   18432 nFluidCells: 1210880
+	minRho:   0.9171 maxRho:   1.0865 mass: 1.300000e+06
+	minU: 6.241686e-07 maxU: 3.283839e-02
+
+timestep: 512
+LBM_showGridStatistics:
+	nObstacleCells:   70688 nAccelCells:   18432 nFluidCells: 1210880
+	minRho:   0.9170 maxRho:   1.0866 mass: 1.300000e+06
+	minU: 1.690904e-06 maxU: 3.289698e-02
+
+timestep: 576
+LBM_showGridStatistics:
+	nObstacleCells:   70688 nAccelCells:   18432 nFluidCells: 1210880
+	minRho:   0.9173 maxRho:   1.0863 mass: 1.300000e+06
+	minU: 8.954591e-07 maxU: 3.302266e-02
+
+timestep: 640
+LBM_showGridStatistics:
+	nObstacleCells:   70688 nAccelCells:   18432 nFluidCells: 1210880
+	minRho:   0.9174 maxRho:   1.0862 mass: 1.300000e+06
+	minU: 1.531901e-06 maxU: 3.294946e-02
+
+timestep: 704
+LBM_showGridStatistics:
+	nObstacleCells:   70688 nAccelCells:   18432 nFluidCells: 1210880
+	minRho:   0.9178 maxRho:   1.0858 mass: 1.300000e+06
+	minU: 6.294503e-07 maxU: 3.322153e-02
+
+timestep: 768
+LBM_showGridStatistics:
+	nObstacleCells:   70688 nAccelCells:   18432 nFluidCells: 1210880
+	minRho:   0.9171 maxRho:   1.0865 mass: 1.300000e+06
+	minU: 9.765897e-07 maxU: 3.276956e-02
+
+timestep: 832
+LBM_showGridStatistics:
+	nObstacleCells:   70688 nAccelCells:   18432 nFluidCells: 1210880
+	minRho:   0.9168 maxRho:   1.0868 mass: 1.300000e+06
+	minU: 3.003070e-06 maxU: 3.280968e-02
+
+timestep: 896
+LBM_showGridStatistics:
+	nObstacleCells:   70688 nAccelCells:   18432 nFluidCells: 1210880
+	minRho:   0.9173 maxRho:   1.0864 mass: 1.300000e+06
+	minU: 1.936296e-06 maxU: 3.317701e-02
+
+timestep: 960
+LBM_showGridStatistics:
+	nObstacleCells:   70688 nAccelCells:   18432 nFluidCells: 1210880
+	minRho:   0.9173 maxRho:   1.0863 mass: 1.300000e+06
+	minU: 2.112393e-06 maxU: 3.285743e-02
+
+LBM_showGridStatistics:
+	nObstacleCells:   70688 nAccelCells:   18432 nFluidCells: 1210880
+	minRho:   0.9174 maxRho:   1.0862 mass: 1.300000e+06
+	minU: 2.943569e-07 maxU: 3.296336e-02
+
+It took 268 seconds
+
